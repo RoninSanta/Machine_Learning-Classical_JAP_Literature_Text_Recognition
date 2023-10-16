@@ -37,7 +37,6 @@ Before preparing the data, we will be generating our first baseline based on inf
 #### [3.1 One-Hot Encoding]
 Next, the model would require categorically encoded labels where each label will be turned into a 10 element vector with a single 'hot' nonzero entry. This is referred as one-hot encoding. Where the position of the vector corresponds to the label will be encoded.
 
-
 ```
 # Encode with the convenient to_catergorical function
 from tensorflow.keras.utils import to_categorical
@@ -64,6 +63,7 @@ To create the optimal model we need to perform underfitting and overfitting and 
 Hopefully, we have created a model of good-fit, now we will perform training on the complete set instead of the split set. The `confusion matrix` below should be a good indicator of the performance of the model(Predicted vs Truth)
 
 <img src="https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/07360837-087f-4a34-a14a-61b4992b8d6a" width="500" height="500">
+
 ```
 #Comparing the prediction and test result
 In [52]: Y_pred[:10]
