@@ -6,7 +6,7 @@
 What was the weather like 500 years ago? What happened when Mt. Fuji erupted? What subjects did the schools teach back then? Historical documents gives us a window into the past, we are able to glimpse at the world before our time; admire its culture, norms and values reflected against our own. The history of Japan is long, unique, and filled with as many conflicts as there were romances, some remained to be undeciphered till this day. Historically, Japan was isolated from the West it was until the Meiji restoration in 1868, where Japan opened its borders and start its modernization. Due to this drastic modernization, changes have to be made to Japanese language, writing and printing systems in hope to create a standardize system that could easily interpreted by anyone and keep up with the industrial age of the Western world. This led to the `Kuzushiji` script slowly being forgotten, despite the fact that it has been practiced over a 1000 years.
 
 ![ancient](https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/86171251-6ded-4340-8b5c-5caae431d682)
-Figure 1. A book written in **Kuzushiji** during the Edo period,"Onna Daigaku" published in 1772
+Figure 1. A book written in ***Kuzushiji*** during the Edo period,"Onna Daigaku" published in 1772
 
 ![ML JAP Kuzushiji Text Recognition PDF](https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/02556fcb-f6f8-4e88-a2e8-ecc593934c5d)
 
@@ -61,9 +61,13 @@ To create the optimal model we need to perform underfitting and overfitting and 
 
 #### [4.2 Final Model - (Confusion Matrix Test)]
 Hopefully, we have created a model of good-fit, now we will perform training on the complete set instead of the split set. The `confusion matrix` below should be a good indicator of the performance of the model(Predicted vs Truth)
-
-
 <img src="https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/07360837-087f-4a34-a14a-61b4992b8d6a" width="500" height="500">
+```
+#Comparing the prediction and test result
+In [52]: Y_pred[:10]
+In [53]: y_test[:10]
+```
+
 
 ## [5. Iterative K-Fold]
 Normally, the most common method used is Hold-Out validation however this method is highly dependent on data points within training and testing sets, which in turn is highly reliant on the splitting of dataset into training and test sets.
