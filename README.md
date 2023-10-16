@@ -21,7 +21,7 @@ Kuzushiji texts from the image provided and predict the modern Japanese script i
 
 Figure 3: The 10 primary classes of Kuzushiji-MNIST dataset.
 
-### [2.1 Split, test and train sets]
+#### [2.1 Split, test and train sets]
 As we would be training the model with training and validation sets, we would need to further split the dataset into training, validation and test sets in a ration of 3:1:1. The output below shows the split of the kmnist dataset between images and labels.
 kmnist_train_img: (42000, 28, 28)
 kmnist_train_labels: (42000,)
@@ -33,7 +33,7 @@ kmnist_test_labels: (14000,)
 ## [3. First Baseline]
 Before preparing the data, we will be generating our first baseline based on informed guesswork with the data available to us currently. Our baseline data model will predict solely according to the most populated label/class on the dataset, which is 9(wo) and using the label against the test data to get a probability of accurate prediction.
 
-### [3.1 One-Hot Encoding]
+#### [3.1 One-Hot Encoding]
 Next, the model would require categorically encoded labels where each label will be turned into a 10 element vector with a single 'hot' nonzero entry. This is referred as one-hot encoding. Where the position of the vector corresponds to the label will be encoded.
 
 ```
@@ -45,17 +45,17 @@ y_test = to_categorical(y_test)
 y_val = to_categorical(y_val)
 ```
 
-### [3.2 Optimizer]
+#### [3.2 Optimizer]
 I will be using ADAM a variant of Stochastic Gradient Descent algorithm as our optimizer for this project to reduce loss over many training loops and improve the network prediction. Adam  works very well in training deep learning models and actually outperforms other Adaptive techniques.
 
-### [3.3 Accuracy VS Loss]
+#### [3.3 Accuracy VS Loss]
 We will be using accuracy as our primary metric at compilation, which is useful since we have same amount of sample per label(refer to first baseline). This is because accuracy is affected by the number of samples available.
 
 
 ## [4. Second Baseline]
 Now we will determine what is the baseline without referencing the dataset but simply looking at the labels/classes present in it.
 
-### [4.1 Underfit, Overfit and Regularizing the Model]
+#### [4.1 Underfit, Overfit and Regularizing the Model]
 To create the optimal model we need to perform underfitting and overfitting and lastly. After creating a model that overfits, we need to regularize the model as to discourage the complexity of the model and avoid overfitting in the future so as to achieve a perfect balance for the model.
 
 
