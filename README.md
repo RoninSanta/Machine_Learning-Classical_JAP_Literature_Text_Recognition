@@ -37,6 +37,7 @@ Before preparing the data, we will be generating our first baseline based on inf
 #### [3.1 One-Hot Encoding]
 Next, the model would require categorically encoded labels where each label will be turned into a 10 element vector with a single 'hot' nonzero entry. This is referred as one-hot encoding. Where the position of the vector corresponds to the label will be encoded.
 
+
 ```
 # Encode with the convenient to_catergorical function
 from tensorflow.keras.utils import to_categorical
