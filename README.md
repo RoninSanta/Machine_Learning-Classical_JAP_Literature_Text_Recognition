@@ -17,7 +17,8 @@ Figure 2. A textbook taught in universities in attempt to standardize modern Jap
 I will be using a TensorFlow dataset called Kuzushiji-MNIST, a dropin replacement for the MNIST dataset(28x28 grayscale, 70,000 images), this is only a small portion out of a ginormous project that plans to digitize about 300,000 old Japanese records. From this dataset, I will create a model that could recognise the
 Kuzushiji texts from the image provided and predict the modern Japanese script it belongs to. Since MNIST restricts to 10 classes, I have to choose one character to represent each of the 10 rows of Hiragana when creating Kuzushiji-MNIST. For example, shown in the Figure below, there are different ways that a character can be represented with slight variation in handwriting.
 
-![10  classes](https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/bea74f50-91d6-4bfa-90a7-aeb02ece7811)
+![10  classes](https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/bea74f50-91d6-4bfa-90a7-aeb02ece7811) 
+![text](https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/9021d2a1-5690-46b0-b316-fb01e0033dc8)
 
 Figure 3: The 10 primary classes of Kuzushiji-MNIST dataset.
 
@@ -58,6 +59,11 @@ Now we will determine what is the baseline without referencing the dataset but s
 #### [4.1 Underfit, Overfit and Regularizing the Model]
 To create the optimal model we need to perform underfitting and overfitting and lastly. After creating a model that overfits, we need to regularize the model as to discourage the complexity of the model and avoid overfitting in the future so as to achieve a perfect balance for the model.
 
+#### [4.2 Final Model]
+Hopefully, we have created a model of good-fit, now we will perform training on the complete set instead of the split set. The `confusion matrix` below should be a good indicator of the performance of the model(Predicted vs Truth)
+
+
+![marix](https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/07360837-087f-4a34-a14a-61b4992b8d6a)
 
 ## [5. Iterative K-Fold]
 Normally, the most common method used is Hold-Out validation however this method is highly dependent on data points within training and testing sets, which in turn is highly reliant on the splitting of dataset into training and test sets.
