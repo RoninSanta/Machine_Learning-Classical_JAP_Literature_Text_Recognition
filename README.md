@@ -3,4 +3,4 @@ Kuzushiji, a ancient form of cursive writing that is used for centuries prior to
 
 
 ## [Background]
-What was the weather like 500 years ago? What happened when Mt. Fuji erupted? What subjects did the schools teach back then?  
+What was the weather like 500 years ago? What happened when Mt. Fuji erupted? What subjects did the schools teach back then? Historical documents gives us a window into the past, we are able to glimpse at the world before our time; admire its culture, norms and values reflected against our own. The history of Japan is long, unique, and filled with as many conflicts as there were romances, some remained to be undeciphered till this day. Historically, Japan was isolated from the West it was until the Meiji restoration in 1868, where Japan opened its borders and start its modernization. Due to this drastic modernization, changes have to be made to Japanese language, writing and printing systems in hope to create a standardize system that could easily interpreted by anyone and keep up with the industrial age of the Western world. This led to ***Kuzushiji* slowly being forgotten, despitethe fact that it has been practiced over a 1000 years.
