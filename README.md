@@ -24,12 +24,6 @@ Figure 3: The 10 primary classes of Kuzushiji-MNIST dataset.
 
 #### [2.1 Split, test and train sets]
 As we would be training the model with training and validation sets, we would need to further split the dataset into training, validation and test sets in a ration of 3:1:1. The output below shows the split of the kmnist dataset between images and labels.
-kmnist_train_img: (42000, 28, 28)
-kmnist_train_labels: (42000,)
-kmnist_val_img: (14000, 28, 28)
-kmnist_val_labels: (14000,)
-kmnist_test_img: (14000, 28, 28)
-kmnist_test_labels: (14000,)
 
 ## [3. First Baseline]
 Before preparing the data, we will be generating our first baseline based on informed guesswork with the data available to us currently. Our baseline data model will predict solely according to the most populated label/class on the dataset, which is 9(wo) and using the label against the test data to get a probability of accurate prediction.
@@ -62,7 +56,7 @@ To create the optimal model we need to perform underfitting and overfitting and 
 #### [4.2 Final Model - (Confusion Matrix Test)]
 Hopefully, we have created a model of good-fit, now we will perform training on the complete set instead of the split set. The `confusion matrix` below should be a good indicator of the performance of the model(Predicted vs Truth)
 
-<img src="https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/07360837-087f-4a34-a14a-61b4992b8d6a" width="500" height="500">
+<img src="https://github.com/RoninSanta/Machine_Learning-Classical_JAP_Literature_Text_Recognition/assets/109457795/07360837-087f-4a34-a14a-61b4992b8d6a" width="600" height="400">
 
 ```
 #Comparing the prediction and test result
